@@ -1,6 +1,6 @@
 # Sistema de reserva en Restaurantes
 
-La apilicacion corre en el puerto 4000 inicia el servicor con **npm run dev**
+La aplicación corre en el puerto 4000 inicia el servidor con **npm run dev**
 
 ## Restaurantes
 - **/v1/api/restaurantes/**     Listado de Restaurantes. (get)
