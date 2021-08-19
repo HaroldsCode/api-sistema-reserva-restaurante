@@ -1,0 +1,20 @@
+[
+    {
+        "Nit": 118092021,
+        "Nombre": "Pepe's",
+        "Descripcion": "Restaurante familiar",
+        "Direccion": "carrera 5 calle 3",
+        "Ciudad": "BUENAVENTURA",
+        "URL": "http://localhost:4000/v1/api/images/118092021.jpeg",
+        "Mesas": 15
+    },
+    {
+        "Nit": 118092020,
+        "Nombre": "Castro's",
+        "Descripcion": "descripcion del restaurante",
+        "Direccion": "carrera 4 calle 4",
+        "Ciudad": "CALI",
+        "URL": "http://localhost:4000/v1/api/images/118092020.jpeg",
+        "Mesas": 15
+    }
+]
