@@ -12,3 +12,30 @@ La aplicación corre en el puerto 4000 inicia el servidor con **npm run dev**
 ## Reserva
 - **/v1/api/reservas/**     Listado de reservas. (get)
 - **/v1/api/reservas/**     Crea una reserva. (post)
+
+## Imagenes
+
+<div >
+    <img src="./prueba/inicio.png" >
+    <br/>
+    <img src="./prueba/crearRestaurante.png" >
+    <br/>
+    <img src="./prueba/restauranteCreado.png" >
+    <br/>
+    <img src="./prueba/editarRestaurante.png" >
+    <br/>
+    <img src="./prueba/editarRestaurante2.png" >
+    <br/>
+    <img src="./prueba/restauranteEditado.png" >
+    <br/>
+    <img src="./prueba/restauranteEditado.png" >
+    <br/>
+    <img src="./prueba/filtroPorCiudad.png" >
+    <br/>
+    <img src="./prueba/filtroPorLetra.png" >
+    <br/>
+    <img src="./prueba/crearReserva.png" >
+    <br/>
+    <img src="./prueba/listaReservas.png" >
+    <br/>
+</div>

@@ -5,9 +5,13 @@ const consultarImagen = (req, res) => {
     const nombreImagen = req.params.imagen;
     const rutaImagen = path.resolve(__dirname, `../../../images/${nombreImagen}`);
     if(fs.existsSync(rutaImagen)){
-        res.status(200).sendfile(rutaImagen)
+        res.sendFile(rutaImagen)
     }else{
-        res.status(404).send('No hay imagen', rutaImagen.toString());
+        res.json({
+            status: 404,
+            data: null,
+            message: `No hay imagen ${rutaImagen.toString()}`
+        })
     }
 }
 

@@ -2,7 +2,7 @@ const dotenv = require('dotenv');
 
 dotenv.config();
 
-const subirImagen = async (req, res) => {
+const cambiarImagen = async (req, res) => {
 
     if(!req.files || Object.keys(req.files).length === 0){
         res.json({
@@ -39,7 +39,6 @@ const subirImagen = async (req, res) => {
             })
         }
     } 
-    
 }
 
-module.exports = subirImagen;
+module.exports = cambiarImagen;

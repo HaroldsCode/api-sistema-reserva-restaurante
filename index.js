@@ -14,7 +14,7 @@ dotenv.config();
 app.use(express.json());
 app.use(morgan('dev'));
 app.use(cors());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(fileUpload())
 
 app.use('/v1/api/restaurantes/', rutaRestaurante);

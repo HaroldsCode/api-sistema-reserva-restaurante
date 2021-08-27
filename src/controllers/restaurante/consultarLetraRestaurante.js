@@ -1,23 +1,22 @@
 const fs = require('fs-extra');
 
 const consultarLetraRestaurante = async (req, res) => {
-    try {
-        const restaurantes = await fs.readJSON('./src/data/restaurantes.json');
-        const restaurante = {
-            Nombre: req.params.letra.toUpperCase()
-        }
-        const restaurantesConsultados = restaurantes.filter(item => item.Nombre.toUpperCase().charAt(0) === restaurante.Nombre) || [];
-        if(restaurantesConsultados.length === 0){
-            throw `No se ha encontrado ningún restaurante en ${restaurante.Nombre}`
-        }
-        await res.json({
+    const restaurantes = await fs.readJSON('./src/data/restaurantes.json');
+    const restaurante = {
+        Nombre: req.params.letra.toUpperCase().charAt(0)
+    }
+    const restaurantesConsultados = restaurantes.filter(item => item.Nombre.toUpperCase().charAt(0) === restaurante.Nombre) || [];
+    if(restaurantesConsultados.length === 0){
+        res.json({
+            status: 404,
+            data: null,
+            message: `No se ha encontrado ningún restaurante con inicial ${restaurante.Nombre}`
+        });
+    }else{
+        res.json({
+            status: 200,
             data: restaurantesConsultados,
             message: null
-        });
-    } catch (error) {
-        res.json({
-            data: null,
-            message: error
         });
     }
 }
