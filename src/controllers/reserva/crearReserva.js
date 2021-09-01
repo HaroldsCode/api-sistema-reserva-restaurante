@@ -1,4 +1,5 @@
 const fs = require('fs-extra');
+const uuid = require('uuid');
 
 const numeroReservasDia = (objetosReserva, fechaReserva) => {
     const temp = objetosReserva.filter(item => formatoFecha(item.Fecha) === fechaReserva)
@@ -23,7 +24,7 @@ const crearReserva = async (req, res) => {
     date.setHours(0,0,0,0);
     const reservas = await fs.readJSON('./src/data/reservas.json');
     const reserva = {
-        id: new Date().getTime(),
+        id: uuid.v4(),
         Fecha: req.body.Fecha,
         Restaurante: req.body.Restaurante
     }

@@ -28,7 +28,7 @@ const editarRestaurante = async(req, res) => {
         if(await reservas.find(item => item.Restaurante.Nit == req.params.nit)){
             const reservaEditar = await reservas.filter(item => item.Restaurante.Nit == req.params.nit)
             reservaEditar.forEach(async(element) => {
-                element.Restaurante = restaurante;
+                await (element['Restaurante'] = restaurante);
                 await fs.writeJSON('./src/data/reservas.json', [...reservas, element]);
             });
         }
