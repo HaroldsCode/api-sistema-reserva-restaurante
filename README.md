@@ -34,6 +34,8 @@ La aplicación corre en el puerto 4000 inicia el servidor con **npm run dev**
     <br/>
     <img src="./prueba/crearReserva.png" >
     <br/>
+    <img src="./prueba/reservasNumeroMesasExcedida.png" >
+    <br/>
     <img src="./prueba/listaReservas.png" >
     <br/>
 </div>
