@@ -28,8 +28,6 @@ La aplicación corre en el puerto 4000 inicia el servidor con **npm run dev**
     <br/>
     <img src="./prueba/restauranteEditado.png" >
     <br/>
-    <img src="./prueba/restauranteEditado.png" >
-    <br/>
     <img src="./prueba/filtroPorCiudad.png" >
     <br/>
     <img src="./prueba/filtroPorLetra.png" >
